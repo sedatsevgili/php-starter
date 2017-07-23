@@ -1,0 +1,14 @@
+<?php
+
+$count = 2;
+$product_price = 100;
+$tax_rate = 18;
+$rebate_rate =10;
+
+$amount_rebate = $product_price*(1-$rebate_rate/100);
+$amount_tax = $product_price+($product_price*$tax_rate/100);
+$total = $amount_tax*(1-$rebate_rate/100);
+
+echo $amount_rebate."\n".$amount_tax."\n".$total;
+
+?>
