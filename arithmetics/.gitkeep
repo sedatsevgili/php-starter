@@ -1,0 +1,10 @@
+<?php
+
+echo "Please enter product price :";
+fscanf(STDIN, "%d\n", $product_price);
+
+$tax_rate = 18;
+
+echo "Tax Value :" .$product_price * ($tax_rate/100);
+
+?>
