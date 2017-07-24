@@ -1,0 +1,15 @@
+<?php
+
+$numbers = array("2","3","5","8","13","21");
+$avg = array_sum($numbers)/count($numbers);
+
+sort($numbers);
+$middleval = floor((count($numbers)-1)/2);
+$low = $numbers[$middleval];
+$high = $numbers[$middleval+1];
+$median = (($low+$high)/2);
+
+echo $avg."\n";
+echo $median;
+
+?>
